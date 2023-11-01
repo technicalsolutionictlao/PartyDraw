@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title=""
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/reset"
+                android:title="@string/reset_players"
+                android:icon="@drawable/ic_refresh_black_24dp"/>
+            <item android:id="@+id/settings"
+                android:title="@string/settings"
+                android:icon="@drawable/ic_settings_black_24dp"/>
+        </menu>
+    </item>
+</menu>

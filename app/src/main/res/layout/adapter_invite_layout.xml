@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/NameIDCurrentFriend"
+            android:layout_width="296dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_toStartOf="@+id/InviteCurrentFriend"
+            android:layout_toLeftOf="@+id/InviteCurrentFriend"
+            android:gravity="left"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorText"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/InviteCurrentFriend"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="#3FA343" />
+    </RelativeLayout>
+</LinearLayout>

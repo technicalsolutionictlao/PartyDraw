@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSecondary">#0BE4CA</color>
+    <color name="colorPrimary">#468EF8</color>
+    <color name="colorSuccess">#36983B</color>
+    <color name="colorWarning">#FFFFEB3B</color>
+    <color name="colorDanger">#FFE91E63</color>
+    <color name="colorBlack">#0E0D0D</color>
+    <color name="colorDefault">#F5F8F8</color>
+    <color name="colorAfterClick">#B4ACAC</color>
+    <color name="colorList">#D4A77E</color>
+    <color name="colorSubList">#E7C098</color>
+    <color name="colorWhite">#ffff</color>
+    <color name="colorActionBar">#D8B38A</color>
+    <color name="colorText">#533623</color>
+</resources>

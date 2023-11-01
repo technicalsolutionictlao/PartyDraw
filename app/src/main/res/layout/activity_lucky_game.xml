@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ictlao.android.app.partydraw.LuckyGame"
+    android:orientation="vertical"
+    android:background="@drawable/backgound_new"
+    android:keepScreenOn="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/list_data_lucky"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/list_button"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/slot3" />
+
+        <TextView
+            android:id="@+id/rollingText2"
+            android:layout_width="240dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="105dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/center1"
+            android:paddingTop="30dp"
+            android:shadowColor="@color/colorSecondary"
+            android:text="Lucky"
+            android:textAlignment="center"
+            android:textColor="@color/colorSubList"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/roll_button"
+            android:layout_width="112dp"
+            android:layout_height="66dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/spin_button" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp">
+
+            <ListView
+                android:id="@+id/ListPayers_lucky"
+                android:layout_width="match_parent"
+                android:layout_height="372dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:divider="@color/colorWarning" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/repeat_lucky_game"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/back_arrow"/>
+
+
+            <Button
+                android:id="@+id/exit_lucky_game"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/home_button" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

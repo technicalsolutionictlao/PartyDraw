@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_background"
+    android:padding="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/exits_textView"
+            android:layout_width="300dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/header_setting"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Switch
+            android:id="@+id/switchOnAndOff"
+            android:layout_width="140dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/music"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:theme="@style/AppTheme"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="58dp"
+            android:layout_marginRight="7dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_backgroud">
+
+            <Spinner
+                android:layout_width="140dp"
+                android:layout_height="58dp"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:gravity="center"
+                android:id="@+id/Language"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <Switch
+            android:id="@+id/effect_sound"
+            android:layout_width="140dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/sound_neffect"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:paddingLeft="3dp"
+            android:theme="@style/AppTheme"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/Ok_main_setting"
+            android:layout_width="83dp"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/OK"
+            android:layout_marginLeft="7dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/cancel_main_setting"
+            android:layout_width="83dp"
+            android:layout_height="51dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/Cancel"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>

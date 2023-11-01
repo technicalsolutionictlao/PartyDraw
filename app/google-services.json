@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "549969251254",
+    "firebase_url": "https://party-draw-6b389-default-rtdb.firebaseio.com",
+    "project_id": "party-draw-6b389",
+    "storage_bucket": "party-draw-6b389.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549969251254:android:5e4699f314b3c995ec8f17",
+        "android_client_info": {
+          "package_name": "com.ictlao.partydraw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549969251254-emm5u7ki89g0ausmb3sa58m96ogaij4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE0mZQSEUFzVBAU5FdZd-UISsZgwgw_eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549969251254-emm5u7ki89g0ausmb3sa58m96ogaij4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

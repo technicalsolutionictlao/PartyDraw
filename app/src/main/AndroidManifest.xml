@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ictlao.partydraw">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--<uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />-->
+    <!--<uses-permission android:name="com.android.vending.BILLING" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:name="com.ictlao.android.app.partydraw.LocaleLanguage"
+        android:allowBackup="true"
+        android:icon="@mipmap/party_icon18"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/party_icon18_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name="com.ictlao.android.app.partydraw.OreoService"/>
+
+        <activity
+            android:name="com.ictlao.android.app.partydraw.ReceiveMessageActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!-- Firebase in this below  Start firebase -->
+        <service android:name="com.ictlao.android.app.partydraw.MyFirebaseInstanceIDService" />
+
+        <activity
+            android:name="com.ictlao.android.app.partydraw.OnlineJokerDraw"
+            android:parentActivityName="com.ictlao.android.app.partydraw.Waiting_Activity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:resizeableActivity="false"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.ictlao.android.app.partydraw.Waiting_Activity"
+            android:parentActivityName="com.ictlao.android.app.partydraw.CreateGroupActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.ictlao.android.app.partydraw.CreateGroupActivity"
+            android:parentActivityName="com.ictlao.android.app.partydraw.SelectGame"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" /> <!-- end firebase -->
+        <activity
+            android:name="com.ictlao.android.app.partydraw.LuckyGame"
+            android:parentActivityName="com.ictlao.android.app.partydraw.User_Player_Lucky_Game"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.ictlao.android.app.partydraw.SwapGame"
+            android:parentActivityName="com.ictlao.android.app.partydraw.UserPlayerSwapGame"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.ictlao.android.app.partydraw.UserPlayerSwapGame"
+            android:parentActivityName="com.ictlao.android.app.partydraw.SelectGame"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.ictlao.android.app.partydraw.User_Player_Lucky_Game"
+            android:parentActivityName="com.ictlao.android.app.partydraw.SelectGame"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.ictlao.android.app.partydraw.JokerGame"
+            android:parentActivityName="com.ictlao.android.app.partydraw.SelectGame"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.ictlao.android.app.partydraw.SelectGame"
+            android:parentActivityName="com.ictlao.android.app.partydraw.HomeActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.ictlao.android.app.partydraw.HomeActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

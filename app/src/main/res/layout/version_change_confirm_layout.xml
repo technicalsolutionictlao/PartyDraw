@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/setting_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/header_update_version"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+        <TextView
+            android:id="@+id/show_version_to_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorSubList"
+            android:gravity="center|center_vertical"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/showMessage_allow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/VersionChangeLayout_not_show_this_massage_again"
+            android:textColor="@color/colorSubList"
+            android:buttonTint="@color/colorSubList"
+            android:checked="false"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/Ok_version"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/OK"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/Cancel_version"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/Cancel"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

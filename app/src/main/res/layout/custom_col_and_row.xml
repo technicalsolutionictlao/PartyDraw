@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_background"
+    android:padding="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/Close_custom_setting_row_col"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/header_setting"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="21dp"
+                android:text="@string/column"
+                android:textColor="@color/colorList"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="36dp"
+                android:text="@string/row"
+                android:textColor="@color/colorList"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <NumberPicker
+                    android:id="@+id/column"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_toStartOf="@+id/times"
+                    android:layout_toLeftOf="@+id/times"
+                    android:background="@color/colorList"
+                    android:descendantFocusability="blocksDescendants"
+                    android:theme="@style/NumberPickerText"/>
+
+                <TextView
+                    android:id="@+id/times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorList"
+                    android:layout_centerInParent="true"/>
+
+                <NumberPicker
+                    android:id="@+id/row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_toEndOf="@+id/times"
+                    android:background="@color/colorList"
+                    android:theme="@style/NumberPickerText"
+                    android:layout_marginLeft="10dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_toRightOf="@+id/times" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Button
+            android:id="@+id/ok_customize_settings"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/OK"/>
+
+        <Button
+            android:textStyle="bold"
+            android:id="@+id/cancel_customize_setting"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/Cancel" />
+    </RelativeLayout>
+</LinearLayout>

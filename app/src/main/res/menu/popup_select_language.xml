@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/item_lao"
+        android:id="@+id/language_lao"
+        android:icon="@drawable/laos_flag"/>
+    <item
+        android:title="@string/item_en"
+        android:id="@+id/language_en"
+        android:icon="@drawable/english_flag" />
+</menu>

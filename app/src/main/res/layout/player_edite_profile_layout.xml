@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_background"
+    android:orientation="vertical"
+    android:padding="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/header_profile"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/PlayerEditProfileLayout_ID"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp">
+
+        <EditText
+            android:id="@+id/edit_id_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/CreateGroupActivityPleaseEnterId"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_design"
+            android:imeOptions="actionDone"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:maxLength="15"
+            android:textSize="20dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/editProfileEnabled"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_edit"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/Ok_edit_Profile"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/OK"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/Cancel_edit_Profile"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_backgroud"
+            android:text="@string/Cancel"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

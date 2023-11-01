@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:compatibility="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/CountDownTextOnlineJokerDraw"
+        android:title=""
+        compatibility:showAsAction="always"
+        compatibility:actionViewClass="android.widget.TextView"/>
+    <item android:id="@+id/CountDownNumberOnlineJokerDraw"
+        android:title=""
+        compatibility:showAsAction="always"
+        compatibility:actionViewClass="android.widget.TextView"/>
+    <item android:id="@+id/infoJokerGame"
+        android:title=""
+        android:icon="@drawable/ic_info_24"
+        compatibility:showAsAction="always"/>
+    <item android:icon="@drawable/ic_settings"
+        android:id="@+id/setting_joker_draw"
+        android:title=""
+        compatibility:showAsAction="always">
+    </item>
+</menu>
