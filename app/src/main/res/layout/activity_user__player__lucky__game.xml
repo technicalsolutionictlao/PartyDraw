@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ictlao.android.app.partydraw.User_Player_Lucky_Game"
+    tools:context="com.ictlao.android.app.partydraw.Feature.Swap.UserPlayerLucky.User_Player_Lucky_Game"
     android:orientation="vertical"
     android:background="@drawable/backgound_new"
     android:keepScreenOn="true">
