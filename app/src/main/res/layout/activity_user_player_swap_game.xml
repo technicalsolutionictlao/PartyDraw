@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ictlao.android.app.partydraw.UserPlayerSwapGame"
+    tools:context="com.ictlao.android.app.partydraw.Feature.UserPlayerSwap.UserPlayerSwapGame"
     android:orientation="vertical"
     android:background="@drawable/backgound_new"
     android:keepScreenOn="true">
